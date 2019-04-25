@@ -26,6 +26,7 @@ public class EncodeMode extends ModificationMode {
         encoders.add(new PlaintextEncoder());
         encoders.add(new URLEncoder());
         encoders.add(new URLSpecialCharEncoder());
+        encoders.add(new URLSpecialCharDoubleEncoder());
         encoders.add(new HTMLEncoder());
         encoders.add(new HTMLSpecialCharEncoder());
         encoders.add(new Base64Encoder());
