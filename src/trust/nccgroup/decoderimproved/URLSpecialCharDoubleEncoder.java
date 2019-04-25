@@ -3,11 +3,11 @@ package trust.nccgroup.decoderimproved;
 import java.io.UnsupportedEncodingException;
 
 /**
- * Created by j on 12/6/16.
+ * Created by k on 25/5/19.
  */
-public class URLSpecialCharEncoder extends ByteModifier {
-    public URLSpecialCharEncoder() {
-        super("URL Special Characters");
+public class URLSpecialCharDoubleEncoder extends ByteModifier {
+    public URLSpecialCharDoubleEncoder() {
+        super("URL Double Encode");
     }
 
     // URL Encode the bytes
@@ -21,12 +21,13 @@ public class URLSpecialCharEncoder extends ByteModifier {
             String output = "";
             for (byte b : input) {
                 if (!Utils.contains(whitelist, b)) {
-                    output += "%";
+                    output += "%25";
                     output += String.format("%02X", (0xFF & (int) b));
                 } else {
                     output += (char)b;
                 }
             }
+
             return output.getBytes("UTF-8");
         } catch (UnsupportedEncodingException e) {
             return new byte[0];

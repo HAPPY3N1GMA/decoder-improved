@@ -22,6 +22,7 @@ public class DecodeMode extends ModificationMode {
         // All decoders go here
         decoders.add(new PlaintextDecoder());
         decoders.add(new URLDecoder());
+        decoders.add(new URLRecursiveDecoder());
         decoders.add(new HTMLDecoder());
         decoders.add(new Base64Decoder());
         decoders.add(new FuzzyBase64Decoder());
