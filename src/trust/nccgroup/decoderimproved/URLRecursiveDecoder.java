@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class URLRecursiveDecoder extends ByteModifier {
     public URLRecursiveDecoder() {
-        super("URL Decode Recursively");
+        super("URL Recursive");
     }
 
     // Recursively URL Decode the bytes

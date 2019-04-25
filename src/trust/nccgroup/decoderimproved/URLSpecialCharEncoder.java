@@ -7,7 +7,7 @@ import java.io.UnsupportedEncodingException;
  */
 public class URLSpecialCharEncoder extends ByteModifier {
     public URLSpecialCharEncoder() {
-        super("URL Special Characters");
+        super("URL Special");
     }
 
     // URL Encode the bytes

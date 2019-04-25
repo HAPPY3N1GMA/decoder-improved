@@ -14,7 +14,7 @@ public class HTMLSpecialCharEncoder extends ByteModifier {
     String HTML_ENCODED_FORMAT_STRING = "&#%d;";
     char[] SPECIAL_CHARS = {'"', '\'', '&', '<', '>'};
     public HTMLSpecialCharEncoder() {
-        super("HTML Special Characters");
+        super("HTML Special");
     }
 
     private boolean isSpecialChar(char input) {
